@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-thermalprinterplugin",
+  "version": "0.0.1",
+  "description": "Cordova Plugin for ZPOS-Z91 Device Thermal Printer",
+  "cordova": {
+    "id": "cordova-plugin-thermalprinterplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KnufflPuffl/ThermalPrinter.git"
+  },
+  "keywords": [
+    "Thermal",
+    "ZPOS-Z91",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Daniel Resch <danielresch8@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KnufflPuffl/ThermalPrinter/issues"
+  },
+  "homepage": "https://github.com/KnufflPuffl/ThermalPrinter/"
+}
