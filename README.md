@@ -2,10 +2,10 @@
 Cordova Thermal Printer App for ZPOS-Z91 Device 
 
 
-# This is Cordova Plugin which will only work on ZPOS-Z91 Device as it is using its proprietary drivers
+## This is a Cordova Plugin which will only work on ZPOS-Z91 Device as it is using its proprietary drivers
 
 
-# Methods 
+## Methods 
 The Plugin only provides 2 methods. 
    
     ThermalPrinterPlugin.init(); 
