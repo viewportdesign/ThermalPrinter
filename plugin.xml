@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-thermalprinterplugin" version="0.0.1">
+    <name>ThermalPrinterPlugin</name>
+
+    <description>Cordova Plugin for ZPOS-Z91 Device Thermal Printer</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,thermal,zpos,z91</keywords>
+    <repo>https://github.com/KnufflPuffl/ThermalPrinter.git</repo>
+    <issue>https://github.com/KnufflPuffl/ThermalPrinter/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/thermalprinterplugin.js" name="thermalPrinterPlugin">
+        <clobbers target="window.plugins.thermalprinterplugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ThermalPrinterPlugin">
+                <param name="android-package" value="com.viewport.cordova.plugin.ThermalPrinterPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ThermalPrinterPlugin.java" target-dir="src/com/viewport/cordova/plugin" />
+		
+		<source-file src="src/android/libs/armeabi/libEmvCore.so" target-dir="libs/armeabi/" />
+		<source-file src="src/android/libs/armeabi/libEmvCoreJNI.so" target-dir="libs/armeabi/" />
+		<source-file src="src/android/libs/armeabi/libJNIEMV.so" target-dir="libs/armeabi/" />
+		<source-file src="src/android/libs/armeabi/libJNIMAC.so" target-dir="libs/armeabi/" />
+		<source-file src="src/android/libs/armeabi/libJNISerial.so" target-dir="libs/armeabi/" />
+		<source-file src="src/android/libs/armeabi/libSmartPos.so" target-dir="libs/armeabi/" />
+		<source-file src="src/android/libs/armeabi/libSmartPosJni.so" target-dir="libs/armeabi/" />
+		
+		<source-file src="src/android/libs/POS2.9.7.190917.jar" target-dir="libs" />
+		
+    </platform>
+
+</plugin>
