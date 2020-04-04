@@ -8,12 +8,11 @@ Cordova Thermal Printer App for ZPOS-Z91 Device
 # Methods 
 The Plugin only provides 2 methods. 
    
-   ThermalPrinterPlugin.init(); 
+    ThermalPrinterPlugin.init(); 
    
 and 
 
-   ThermalPrinterPlugin.print(String string); 
-  
+    ThermalPrinterPlugin.print(String string); 
   
 As with all cordova Plugins the ThermalPrinterPlugin will only be available after deviceReady(), you will then have first to call ThermalPrinterPlugin.init()
 before being able to use the ThermalPrinterPlugin.print(String string). Use \n in your print String to add a newline. 
